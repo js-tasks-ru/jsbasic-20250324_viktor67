@@ -1,7 +1,6 @@
 
 function sumSalary(salaries) {
   let sum = 0;
-  let isHasSalary = false;
   for (const key in salaries) {
     if (typeof salaries[key] === 'number' && Number.isFinite(salaries[key]))
     {
@@ -10,12 +9,6 @@ function sumSalary(salaries) {
     }
     
   }
-  if (isHasSalary) {
-    return sum;
-  } else {
-    return 0;
-  }
-
-  
+  return sum;
 }
 
